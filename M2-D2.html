@@ -26,8 +26,9 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="exercise.js"></script>
+
     <style>
         /* EXERCISE 1
             For every Album displayed in the page we'd like to have a consistent appearence.
@@ -50,10 +51,43 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
 </head>
 
 <body>
-    <!-- EXERCISE 2 
-            Implement a navigation bar using the bootstrap component
-            This navigation bar must link every section in your page.
+    <header>
+<nav class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Strive</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#favorite">Favorite Albums</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#shame">Hall of Shame</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#admired">Musician I admire</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </nav> 
+</nav>
+
+    </header>
+    <section id="favorite"></section>
+    <section id="shame"></section>
+    <section id="admired"></section>
+    <footer id="contact"></footer>
+    <!-- 
         -->
+
 
     <!-- EXERCISE 3
             Create a responsive section for your favourite albums.
@@ -116,3 +150,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
 </body>
 
 </html>
+
+<!--EXERCISE 2 
+Implement a navigation bar using the bootstrap component
+This navigation bar must link every section in your page.-->
