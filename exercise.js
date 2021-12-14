@@ -6,6 +6,9 @@
     
 */
 
+window.onload = function () {
+    addList()
+}
 function addList () {
 
 // 1. Save this array in a variable called genres: ["Comedy", "Drama", "Romance", "Horror", "Sci-Fi", "Documentary"]
@@ -15,7 +18,7 @@ let genres = ["Comedy", "Drama", "Romance", "Horror", "Sci-Fi", "Documentary"]
 let newList = document.createElement("ul")
 
 // 3) Cycle the array and create a list-item via JavaScript for every element
-for (let genre in genres) {
+for (let genre of genres) {
 let newItem = document.createElement("li")
 // 4) Insert the genre as text in the list-item
 newItem.innerText = genre
@@ -28,4 +31,4 @@ let genreDiv = document.getElementById("genre-div")
 genreDiv.appendChild(newList)
 }
 
-addList()
+
